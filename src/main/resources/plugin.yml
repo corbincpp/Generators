@@ -10,12 +10,9 @@ commands:
     aliases: [generator]
     permission: cavern.use
 permissions:
-  cavern.reload:
-    description: Allows reloading of the plugin
-    default: op
-  cavern.give:
+  generators.give:
     description: Allows giving generators to players
     default: op
-  cavern.use:
-    description: Allows using the generators commands
-    default: true
+  generators.reload:
+    description: Allows reloading of the generators
+    default: op
