@@ -28,8 +28,8 @@ public class GiveGeneratorCommand implements CommandExecutor {
         }
 
         if (args[0].equalsIgnoreCase("reload")) {
-            if (!sender.hasPermission("cavern.reload")) {
-                sender.sendMessage("You do not have permission to use this command.");
+            if (!sender.hasPermission("generators.reload") && !sender.isOp()) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission to use this command.");
                 return true;
             }
             plugin.reloadConfig();
@@ -38,8 +38,8 @@ public class GiveGeneratorCommand implements CommandExecutor {
         }
 
         if (args[0].equalsIgnoreCase("give")) {
-            if (!sender.hasPermission("cavern.give")) {
-                sender.sendMessage("You do not have permission to use this command.");
+            if (!sender.hasPermission("generators.give") && !sender.isOp()) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission to use this command.");
                 return true;
             }
 
