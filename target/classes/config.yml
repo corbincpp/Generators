@@ -1,0 +1,46 @@
+generator:
+  gui:
+    title: Generator GUI
+    size: 27
+    slots:
+      fuel_slot: 11
+      collect_button: 15
+    items:
+      fuel_item:
+        material: COAL
+        display_name: '&8&lFUEL SLOT'
+        lore: '&fCoal {amount}/{max_fuel}'
+      collect_item:
+        material: CHEST
+        display_name: '&a&lCOLLECT MONEY'
+        lore: '&fAmount Made: &a${amount_made}'
+  max_fuel: 64
+  money_per_minute: 500
+  item:
+    material: BEACON
+    display_name: '&e&lGENERATOR BEACON'
+    lore:
+      - '&8Money Generator'
+      - '&r '
+      - '&7Information:'
+      - '&fGenerator beacons will generate passive'
+      - '&fcash as long as there is fuel powering it!'
+      - '&r '
+      - '&eObtain @ /gemshop'
+      - '&r '
+      - '&7Place to Start Generating'
+  messages:
+    single_generator_per_chunk: '&e&lGENERATOR &7➥ &fOnly one generator can be placed
+      per chunk!'
+    single_generator_per_chunk_sound: ''
+    generator_placed_successfully: '&e&lGENERATOR &7➥ &fGenerator placed successfully.'
+    generator_placed_successfully_sound: BLOCK_NOTE_BLOCK_PLING
+    generator_full: '&e&lGENERATOR &7➥ &fThe generator is already full.'
+    generator_full_sound: BLOCK_ANVIL_LAND
+    no_coal_in_inventory: '&e&lGENERATOR &7➥ &fYou do not have any coal in your inventory.'
+    no_coal_in_inventory_sound: ENTITY_VILLAGER_NO
+    fuel_added: '&e&lGENERATOR &7➥ &fAdded &e{amount} &ffuel to the generator.'
+    fuel_added_sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    no_money_to_collect: '&e&lGENERATOR &7➥ &fNo money to collect.'
+    no_money_to_collect_sound: ENTITY_VILLAGER_NO
+    collected_money_sound: ENTITY_PLAYER_LEVELUP

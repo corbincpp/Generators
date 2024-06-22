@@ -1,0 +1,5 @@
+org\corbin\caverngenerators\CavernGenerators.class
+org\corbin\caverngenerators\GiveGeneratorCommand.class
+org\corbin\caverngenerators\GeneratorTask.class
+org\corbin\caverngenerators\GeneratorTabCompleter.class
+org\corbin\caverngenerators\GeneratorListener.class

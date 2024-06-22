@@ -1,0 +1,21 @@
+name: CavernGenerators
+version: '${project.version}'
+main: org.corbin.caverngenerators.CavernGenerators
+api-version: '1.20'
+depend: [Essentials]
+commands:
+  generators:
+    description: Generator commands
+    usage: /<command>
+    aliases: [generator]
+    permission: cavern.use
+permissions:
+  cavern.reload:
+    description: Allows reloading of the plugin
+    default: op
+  cavern.give:
+    description: Allows giving generators to players
+    default: op
+  cavern.use:
+    description: Allows using the generators commands
+    default: true
